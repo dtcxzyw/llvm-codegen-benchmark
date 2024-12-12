@@ -8,8 +8,7 @@ func00000000000003e1:                   # @func00000000000003e1
 	ret
 func00000000000003e4:                   # @func00000000000003e4
 	slli	a2, a2, 34
-	srli	a2, a2, 34
-	slli	a2, a2, 2
+	srli	a2, a2, 32
 	add	a1, a1, a2
 	addi	a0, a0, 8
 	sltu	a0, a0, a1
@@ -30,8 +29,7 @@ func00000000000001e4:                   # @func00000000000001e4
 	ret
 func00000000000003ec:                   # @func00000000000003ec
 	slli	a2, a2, 37
-	srli	a2, a2, 37
-	slli	a2, a2, 3
+	srli	a2, a2, 34
 	add	a1, a1, a2
 	addi	a0, a0, 8
 	xor	a0, a0, a1

@@ -15,22 +15,19 @@ func0000000000000017:                   # @func0000000000000017
 	ret
 func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slliw	a1, a1, 13
+	srli	a1, a1, 35
 	slliw	a0, a0, 23
 	or	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slliw	a1, a1, 13
+	srli	a1, a1, 35
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slliw	a1, a1, 9
+	srli	a1, a1, 39
 	slliw	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -61,8 +58,7 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000001e:                   # @func000000000000001e
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slliw	a1, a1, 4
+	srli	a1, a1, 44
 	slliw	a0, a0, 12
 	or	a0, a0, a1
 	ret

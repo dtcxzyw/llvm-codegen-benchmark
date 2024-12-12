@@ -6,11 +6,10 @@ func0000000000000009:                   # @func0000000000000009
 	or	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f
-	lui	a3, 16
-	addiw	a3, a3, -1
-	and	a2, a2, a3
-	and	a1, a1, a3
-	slli	a2, a2, 15
+	slli	a2, a2, 48
+	slli	a1, a1, 48
+	srli	a2, a2, 33
+	srli	a1, a1, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -22,11 +21,10 @@ func000000000000002c:                   # @func000000000000002c
 	or	a0, a0, a1
 	ret
 func000000000000003e:                   # @func000000000000003e
-	lui	a3, 16
-	addiw	a3, a3, -1
-	and	a2, a2, a3
-	and	a1, a1, a3
-	slli	a2, a2, 8
+	slli	a2, a2, 48
+	slli	a1, a1, 48
+	srli	a2, a2, 40
+	srli	a1, a1, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

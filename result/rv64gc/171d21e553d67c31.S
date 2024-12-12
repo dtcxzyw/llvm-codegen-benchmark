@@ -1,19 +1,16 @@
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 6
+	srli	a1, a1, 42
 	add	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 21
+	srli	a1, a1, 27
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 1
+	srli	a1, a1, 47
 	add	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -22,14 +19,12 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 24
+	srli	a1, a1, 24
 	add	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 3
+	srli	a1, a1, 45
 	add	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b

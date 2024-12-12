@@ -1,8 +1,8 @@
 func000000000000007f:                   # @func000000000000007f
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	zext.h	a0, a0
 	lui	a2, 16
-	slli	a1, a1, 10
+	srli	a1, a1, 38
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -14,18 +14,18 @@ func0000000000000021:                   # @func0000000000000021
 	addw	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	zext.h	a0, a0
 	lui	a2, 16
-	slli	a1, a1, 10
+	srli	a1, a1, 38
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000037:                   # @func0000000000000037
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	zext.h	a0, a0
 	lui	a2, 16
-	slli	a1, a1, 10
+	srli	a1, a1, 38
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

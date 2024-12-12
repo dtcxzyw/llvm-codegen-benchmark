@@ -25,8 +25,7 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 13
+	srli	a2, a2, 35
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -37,8 +36,7 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 8
+	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -59,8 +57,7 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000001d:                   # @func000000000000001d
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 8
+	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -71,8 +68,7 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 8
+	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -83,8 +79,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 4
+	srli	a2, a2, 44
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -95,8 +90,7 @@ func0000000000000013:                   # @func0000000000000013
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 8
+	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

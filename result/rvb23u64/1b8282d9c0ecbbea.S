@@ -1,6 +1,6 @@
 func000000000000001f:                   # @func000000000000001f
-	zext.h	a2, a2
-	slli	a2, a2, 9
+	slli	a2, a2, 48
+	srli	a2, a2, 39
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -15,8 +15,8 @@ func0000000000000015:                   # @func0000000000000015
 	addw	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
-	zext.h	a2, a2
-	slli	a2, a2, 3
+	slli	a2, a2, 48
+	srli	a2, a2, 45
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -26,8 +26,8 @@ func0000000000000007:                   # @func0000000000000007
 	addw	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	zext.h	a2, a2
-	slli	a2, a2, 7
+	slli	a2, a2, 48
+	srli	a2, a2, 41
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret

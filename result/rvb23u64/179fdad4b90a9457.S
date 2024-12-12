@@ -3,13 +3,13 @@ func0000000000000008:                   # @func0000000000000008
 	addw	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
-	zext.h	a1, a1
-	slli	a1, a1, 8
+	slli	a1, a1, 48
+	srli	a1, a1, 40
 	addw	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	zext.h	a1, a1
-	slli	a1, a1, 4
+	slli	a1, a1, 48
+	srli	a1, a1, 44
 	addw	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
@@ -17,8 +17,8 @@ func000000000000000b:                   # @func000000000000000b
 	addw	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	zext.h	a1, a1
-	slli	a1, a1, 4
+	slli	a1, a1, 48
+	srli	a1, a1, 44
 	addw	a0, a0, a1
 	ret
 func000000000000001b:                   # @func000000000000001b
@@ -35,8 +35,8 @@ func000000000000000e:                   # @func000000000000000e
 	sext.w	a0, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
-	zext.h	a1, a1
-	slli	a1, a1, 10
+	slli	a1, a1, 48
+	srli	a1, a1, 38
 	addw	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e

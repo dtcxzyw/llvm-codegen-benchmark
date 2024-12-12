@@ -8,54 +8,48 @@ func000000000000001c:                   # @func000000000000001c
 	addi	a0, a0, 22
 	ret
 func000000000000005f:                   # @func000000000000005f
-	slli	a0, a0, 48
 	li	a3, 528
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	slli	a0, a0, 1
+	srli	a0, a0, 47
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
 func000000000000004f:                   # @func000000000000004f
 	add	a1, a1, a2
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	slli	a0, a0, 4
+	srli	a0, a0, 44
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a2
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	slli	a0, a0, 3
+	srli	a0, a0, 45
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 func0000000000000013:                   # @func0000000000000013
 	add	a1, a1, a2
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	slli	a0, a0, 3
+	srli	a0, a0, 45
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a1, a1, a2
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	slli	a0, a0, 2
+	srli	a0, a0, 46
 	add	a0, a0, a1
 	addi	a0, a0, -2048
 	ret
 func000000000000007f:                   # @func000000000000007f
-	slli	a0, a0, 48
 	li	a3, 208
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	slli	a0, a0, 2
+	srli	a0, a0, 46
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret

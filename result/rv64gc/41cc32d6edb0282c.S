@@ -20,8 +20,7 @@ func0000000000000000:                   # @func0000000000000000
 func00000000000000c3:                   # @func00000000000000c3
 	add	a0, a0, a2
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 4
+	srli	a1, a1, 44
 	add	a0, a0, a1
 	addi	a0, a0, 40
 	ret

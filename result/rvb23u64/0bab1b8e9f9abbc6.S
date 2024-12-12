@@ -10,8 +10,8 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 3
 	ret
 func0000000000000001:                   # @func0000000000000001
-	zext.h	a0, a0
-	slli	a0, a0, 4
+	slli	a0, a0, 48
+	srli	a0, a0, 44
 	neg	a0, a0
 	ret
 .LCPI3_0:

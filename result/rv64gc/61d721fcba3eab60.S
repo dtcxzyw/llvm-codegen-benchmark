@@ -6,8 +6,6 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a1, a1, 56
 	or	a1, a1, a0
 .LBB0_2:                                # %entry
-	lui	a0, 16
-	addiw	a0, a0, -1
-	and	a0, a0, a1
-	slli	a0, a0, 16
+	slli	a0, a1, 48
+	srli	a0, a0, 32
 	ret

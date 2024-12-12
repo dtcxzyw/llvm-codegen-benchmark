@@ -21,11 +21,10 @@ func0000000000000040:                   # @func0000000000000040
 	addi	a0, a0, 19
 	ret
 func0000000000000003:                   # @func0000000000000003
-	slli	a2, a2, 48
 	slli	a1, a1, 4
-	srli	a2, a2, 48
+	slli	a2, a2, 48
 	add	a0, a0, a1
-	slli	a2, a2, 4
+	srli	a2, a2, 44
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
@@ -58,11 +57,10 @@ func000000000000007f:                   # @func000000000000007f
 	addi	a0, a0, 1
 	ret
 func000000000000002c:                   # @func000000000000002c
-	slli	a2, a2, 48
 	slli	a1, a1, 5
-	srli	a2, a2, 48
+	slli	a2, a2, 48
 	add	a0, a0, a1
-	slli	a2, a2, 5
+	srli	a2, a2, 43
 	add	a0, a0, a2
 	addi	a0, a0, 35
 	ret
@@ -102,20 +100,18 @@ func000000000000002e:                   # @func000000000000002e
 	addi	a0, a0, -1
 	ret
 func0000000000000060:                   # @func0000000000000060
-	slli	a2, a2, 48
 	slli	a1, a1, 1
-	srli	a2, a2, 48
+	slli	a2, a2, 48
 	add	a0, a0, a1
-	slli	a2, a2, 1
+	srli	a2, a2, 47
 	add	a0, a0, a2
 	addi	a0, a0, -2
 	ret
 func0000000000000063:                   # @func0000000000000063
-	slli	a2, a2, 48
 	slli	a1, a1, 1
-	srli	a2, a2, 48
+	slli	a2, a2, 48
 	add	a0, a0, a1
-	slli	a2, a2, 1
+	srli	a2, a2, 47
 	add	a0, a0, a2
 	addi	a0, a0, 2
 	ret

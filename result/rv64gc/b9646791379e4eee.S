@@ -8,8 +8,7 @@ func000000000000000f:                   # @func000000000000000f
 	srli	a0, a0, 49
 	addi	a0, a0, -1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	slli	a0, a0, 2
+	srli	a0, a0, 46
 	ret
 func000000000000001c:                   # @func000000000000001c
 	addi	a0, a0, 1

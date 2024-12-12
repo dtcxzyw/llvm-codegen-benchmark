@@ -4,8 +4,8 @@ func000000000000017f:                   # @func000000000000017f
 	addi	a0, a0, 544
 	ret
 func000000000000017b:                   # @func000000000000017b
-	zext.h	a1, a1
-	slli	a1, a1, 4
+	slli	a1, a1, 48
+	srli	a1, a1, 44
 	add	a0, a0, a1
 	addi	a0, a0, 168
 	ret

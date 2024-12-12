@@ -14,20 +14,20 @@ func0000000000000017:                   # @func0000000000000017
 	or	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f
-	zext.h	a1, a1
-	slliw	a1, a1, 13
+	slli	a1, a1, 48
+	srli	a1, a1, 35
 	slliw	a0, a0, 23
 	or	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d
-	zext.h	a1, a1
-	slliw	a1, a1, 13
+	slli	a1, a1, 48
+	srli	a1, a1, 35
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
-	zext.h	a1, a1
-	slliw	a1, a1, 9
+	slli	a1, a1, 48
+	srli	a1, a1, 39
 	slliw	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -57,8 +57,8 @@ func0000000000000010:                   # @func0000000000000010
 	or	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	zext.h	a1, a1
-	slliw	a1, a1, 4
+	slli	a1, a1, 48
+	srli	a1, a1, 44
 	slliw	a0, a0, 12
 	or	a0, a0, a1
 	ret

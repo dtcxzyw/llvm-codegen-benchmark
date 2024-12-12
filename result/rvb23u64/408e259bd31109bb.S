@@ -2,12 +2,12 @@ func0000000000000002:                   # @func0000000000000002
 	slliw	a0, a0, 16
 	ret
 func0000000000000003:                   # @func0000000000000003
-	zext.h	a0, a0
-	slli	a0, a0, 6
+	slli	a0, a0, 48
+	srli	a0, a0, 42
 	ret
 func0000000000000007:                   # @func0000000000000007
-	zext.h	a0, a0
-	slli	a0, a0, 10
+	slli	a0, a0, 48
+	srli	a0, a0, 38
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slliw	a0, a0, 24

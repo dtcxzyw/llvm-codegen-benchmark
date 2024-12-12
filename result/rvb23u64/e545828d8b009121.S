@@ -9,9 +9,9 @@ func00000000000000ac:                   # @func00000000000000ac
 	snez	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	zext.h	a0, a0
-	slli	a1, a1, 8
+	srli	a1, a1, 40
 	or	a0, a0, a1
 	li	a1, 7
 	slli	a1, a1, 9

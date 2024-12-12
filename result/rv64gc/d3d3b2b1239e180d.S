@@ -38,9 +38,8 @@ func00000000000000bf:                   # @func00000000000000bf
 	sext.w	a2, a2
 	slli	a1, a1, 48
 	slli	a2, a2, 1
-	srli	a1, a1, 48
 	add	a0, a0, a2
-	slli	a1, a1, 1
+	srli	a1, a1, 47
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret
@@ -48,8 +47,7 @@ func0000000000000083:                   # @func0000000000000083
 	sext.w	a2, a2
 	slli	a1, a1, 48
 	add	a0, a0, a2
-	srli	a1, a1, 48
-	slli	a1, a1, 3
+	srli	a1, a1, 45
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret

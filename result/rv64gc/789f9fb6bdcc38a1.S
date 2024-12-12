@@ -26,15 +26,13 @@ func000000000000001f:                   # @func000000000000001f
 func0000000000000007:                   # @func0000000000000007
 	addi	a1, a1, -1
 	slli	a1, a1, 47
-	srli	a1, a1, 47
-	slli	a1, a1, 3
+	srli	a1, a1, 44
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	addi	a1, a1, -1
 	slli	a1, a1, 52
-	srli	a1, a1, 52
-	slli	a1, a1, 4
+	srli	a1, a1, 48
 	add	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004

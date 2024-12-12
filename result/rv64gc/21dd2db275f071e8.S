@@ -49,8 +49,7 @@ func000000000000002f:                   # @func000000000000002f
 func0000000000000030:                   # @func0000000000000030
 	slli	a2, a2, 33
 	slli	a0, a0, 1
-	srli	a2, a2, 33
-	slli	a2, a2, 1
+	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 16

@@ -6,16 +6,16 @@ func000000000000001f:                   # @func000000000000001f
 	bseti	a0, a0, 34
 	ret
 func000000000000003f:                   # @func000000000000003f
-	zext.h	a1, a1
-	slli	a1, a1, 32
+	slli	a1, a1, 48
+	srli	a1, a1, 16
 	zext.h	a0, a0
 	or	a0, a0, a1
 	bseti	a0, a0, 63
 	ret
 func000000000000000f:                   # @func000000000000000f
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	zext.h	a0, a0
-	slli	a1, a1, 16
+	srli	a1, a1, 32
 	or	a0, a0, a1
 	lui	a1, 1048297
 	addi	a1, a1, 1403

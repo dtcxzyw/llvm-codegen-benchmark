@@ -17,13 +17,11 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a2, a2, 49
 	addiw	a3, a3, 781
 	mul	a2, a2, a3
-	li	a3, 42
 	srli	a2, a2, 20
+	li	a3, 42
 	mul	a2, a2, a3
-	lui	a3, 16
-	sub	a1, a1, a2
-	addiw	a3, a3, -1
-	and	a1, a1, a3
-	slli	a1, a1, 1
+	subw	a1, a1, a2
+	slli	a1, a1, 48
+	srli	a1, a1, 47
 	add	a0, a0, a1
 	ret

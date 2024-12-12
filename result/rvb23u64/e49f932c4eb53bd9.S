@@ -1,8 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	lui	a2, 65535
-	slli	a1, a1, 32
+	srli	a1, a1, 16
 	slli	a2, a2, 20
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

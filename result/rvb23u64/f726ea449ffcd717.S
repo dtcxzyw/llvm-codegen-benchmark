@@ -23,10 +23,10 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sext.w	a2, a2
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	slli	a2, a2, 4
 	add	a0, a0, a2
-	slli	a1, a1, 4
+	srli	a1, a1, 44
 	add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

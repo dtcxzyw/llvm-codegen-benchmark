@@ -10,8 +10,8 @@ func000000000000000b:                   # @func000000000000000b
 	ori	a0, a0, 204
 	ret
 func000000000000001f:                   # @func000000000000001f
-	zext.h	a1, a1
-	slli	a1, a1, 32
+	slli	a1, a1, 48
+	srli	a1, a1, 16
 	or	a0, a0, a1
 	bseti	a0, a0, 63
 	ret

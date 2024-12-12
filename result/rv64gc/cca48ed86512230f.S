@@ -9,9 +9,8 @@ func0000000000000020:                   # @func0000000000000020
 func000000000000002f:                   # @func000000000000002f
 	slli	a2, a2, 48
 	andi	a1, a1, 255
-	srli	a2, a2, 48
-	slli	a1, a1, 3
-	slli	a2, a2, 3
-	add	a0, a0, a1
+	srli	a2, a2, 45
 	add	a0, a0, a2
+	slli	a1, a1, 3
+	add	a0, a0, a1
 	ret

@@ -27,9 +27,10 @@ func0000000000000010:                   # @func0000000000000010
 	addi	a0, a0, 1
 	ret
 func000000000000007f:                   # @func000000000000007f
-	zext.h	a2, a2
+	slli	a2, a2, 48
+	srli	a2, a2, 44
+	add	a1, a1, a2
 	sext.w	a0, a0
-	sh1add	a0, a2, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, 32
 	ret

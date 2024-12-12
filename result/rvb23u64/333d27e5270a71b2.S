@@ -17,10 +17,10 @@ func0000000000000040:                   # @func0000000000000040
 	addi	a0, a0, 19
 	ret
 func0000000000000003:                   # @func0000000000000003
-	zext.h	a2, a2
 	slli	a1, a1, 4
+	slli	a2, a2, 48
 	add	a0, a0, a1
-	slli	a2, a2, 4
+	srli	a2, a2, 44
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
@@ -49,10 +49,10 @@ func000000000000007f:                   # @func000000000000007f
 	addi	a0, a0, 1
 	ret
 func000000000000002c:                   # @func000000000000002c
-	zext.h	a2, a2
 	slli	a1, a1, 5
+	slli	a2, a2, 48
 	add	a0, a0, a1
-	slli	a2, a2, 5
+	srli	a2, a2, 43
 	add	a0, a0, a2
 	addi	a0, a0, 35
 	ret

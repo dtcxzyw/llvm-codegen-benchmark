@@ -1,18 +1,18 @@
 func000000000000000f:                   # @func000000000000000f
-	zext.h	a1, a1
-	slliw	a1, a1, 4
+	slli	a1, a1, 48
+	srli	a1, a1, 44
 	slliw	a0, a0, 2
 	xor	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	zext.h	a1, a1
-	slliw	a1, a1, 11
+	slli	a1, a1, 48
+	srli	a1, a1, 37
 	slliw	a0, a0, 16
 	xor	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	zext.h	a1, a1
-	slliw	a1, a1, 11
+	slli	a1, a1, 48
+	srli	a1, a1, 37
 	slliw	a0, a0, 16
 	xor	a0, a0, a1
 	ret

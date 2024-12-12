@@ -19,8 +19,7 @@ func000000000000002f:                   # @func000000000000002f
 func000000000000007f:                   # @func000000000000007f
 	slli	a2, a2, 48
 	slliw	a1, a1, 23
-	srli	a2, a2, 48
-	slli	a2, a2, 13
+	srli	a2, a2, 35
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -51,8 +50,7 @@ func000000000000002d:                   # @func000000000000002d
 func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 48
 	slliw	a1, a1, 12
-	srli	a2, a2, 48
-	slli	a2, a2, 4
+	srli	a2, a2, 44
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

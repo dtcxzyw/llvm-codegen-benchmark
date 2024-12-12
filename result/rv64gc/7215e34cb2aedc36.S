@@ -35,8 +35,7 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func0000000000000030:                   # @func0000000000000030
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 5
+	srli	a2, a2, 43
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 35
@@ -52,8 +51,7 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000007e:                   # @func000000000000007e
 	slli	a2, a2, 48
 	slli	a0, a0, 5
-	srli	a2, a2, 48
-	slli	a2, a2, 5
+	srli	a2, a2, 43
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 32
@@ -63,17 +61,15 @@ func0000000000000070:                   # @func0000000000000070
 	slli	a0, a0, 1
 	add	a0, a0, a1
 	lui	a1, 1048572
-	srli	a2, a2, 48
-	addiw	a1, a1, 768
-	slli	a2, a2, 1
-	add	a0, a0, a1
+	srli	a2, a2, 47
 	add	a0, a0, a2
+	addiw	a1, a1, 768
+	add	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 48
 	slli	a0, a0, 1
-	srli	a2, a2, 48
-	slli	a2, a2, 1
+	srli	a2, a2, 47
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 32

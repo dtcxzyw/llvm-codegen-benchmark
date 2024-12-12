@@ -4,8 +4,7 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	slli	a0, a0, 3
+	srli	a0, a0, 45
 	addi	a0, a0, 6
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -15,8 +14,7 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 48
-	srli	a0, a0, 48
-	slli	a0, a0, 13
+	srli	a0, a0, 35
 	lui	a1, 231424
 	or	a0, a0, a1
 	ret

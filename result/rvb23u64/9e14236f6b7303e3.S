@@ -1,6 +1,6 @@
 func00000000000000e1:                   # @func00000000000000e1
-	zext.h	a1, a1
-	slli	a1, a1, 8
+	slli	a1, a1, 48
+	srli	a1, a1, 40
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
@@ -22,8 +22,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	seqz	a0, a0
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	zext.h	a1, a1
-	slli	a1, a1, 8
+	slli	a1, a1, 48
+	srli	a1, a1, 40
 	or	a0, a0, a1
 	li	a1, 7
 	sext.w	a0, a0

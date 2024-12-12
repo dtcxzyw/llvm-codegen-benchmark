@@ -1,7 +1,6 @@
 func00000000000001e1:                   # @func00000000000001e1
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 4
+	srli	a2, a2, 44
 	add	a1, a1, a2
 	addi	a0, a0, 16
 	xor	a0, a0, a1
@@ -54,8 +53,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func00000000000001c8:                   # @func00000000000001c8
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 3
+	srli	a2, a2, 45
 	add	a1, a1, a2
 	addi	a0, a0, -8
 	sltu	a0, a1, a0

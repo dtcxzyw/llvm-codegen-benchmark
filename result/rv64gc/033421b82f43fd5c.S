@@ -44,8 +44,7 @@ func0000000000000070:                   # @func0000000000000070
 	lui	a2, 6
 	slli	a1, a1, 33
 	addiw	a2, a2, -1952
-	srli	a1, a1, 33
-	slli	a1, a1, 4
+	srli	a1, a1, 29
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

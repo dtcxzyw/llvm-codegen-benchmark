@@ -42,16 +42,14 @@ func0000000000000013:                   # @func0000000000000013
 func000000000000005c:                   # @func000000000000005c
 	add	a1, a1, a2
 	slli	a1, a1, 37
-	srli	a1, a1, 37
-	slli	a1, a1, 2
+	srli	a1, a1, 35
 	add	a0, a0, a1
 	addi	a0, a0, 48
 	ret
 func000000000000005f:                   # @func000000000000005f
 	add	a1, a1, a2
 	slli	a1, a1, 37
-	srli	a1, a1, 37
-	slli	a1, a1, 2
+	srli	a1, a1, 35
 	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret

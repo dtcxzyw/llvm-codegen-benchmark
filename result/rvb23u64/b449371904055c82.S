@@ -24,8 +24,8 @@ func000000000000001e:                   # @func000000000000001e
 	or	a0, a0, a2
 	ret
 func000000000000001f:                   # @func000000000000001f
-	zext.h	a2, a2
-	slli	a2, a2, 13
+	slli	a2, a2, 48
+	srli	a2, a2, 35
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -35,8 +35,8 @@ func000000000000001b:                   # @func000000000000001b
 	or	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
-	zext.h	a2, a2
-	slli	a2, a2, 8
+	slli	a2, a2, 48
+	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -56,8 +56,8 @@ func000000000000001c:                   # @func000000000000001c
 	or	a0, a0, a2
 	ret
 func000000000000001d:                   # @func000000000000001d
-	zext.h	a2, a2
-	slli	a2, a2, 8
+	slli	a2, a2, 48
+	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -67,8 +67,8 @@ func000000000000001a:                   # @func000000000000001a
 	or	a0, a0, a2
 	ret
 func000000000000000d:                   # @func000000000000000d
-	zext.h	a2, a2
-	slli	a2, a2, 8
+	slli	a2, a2, 48
+	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -78,8 +78,8 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a2
 	ret
 func000000000000000c:                   # @func000000000000000c
-	zext.h	a2, a2
-	slli	a2, a2, 4
+	slli	a2, a2, 48
+	srli	a2, a2, 44
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -89,8 +89,8 @@ func0000000000000013:                   # @func0000000000000013
 	or	a0, a0, a2
 	ret
 func000000000000000e:                   # @func000000000000000e
-	zext.h	a2, a2
-	slli	a2, a2, 8
+	slli	a2, a2, 48
+	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

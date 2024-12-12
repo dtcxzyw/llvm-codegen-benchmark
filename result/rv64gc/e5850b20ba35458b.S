@@ -7,15 +7,13 @@ func00000000000000e1:                   # @func00000000000000e1
 	ret
 func00000000000000e4:                   # @func00000000000000e4
 	slli	a2, a2, 34
-	srli	a2, a2, 34
-	slli	a2, a2, 2
+	srli	a2, a2, 32
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func00000000000000ec:                   # @func00000000000000ec
 	slli	a2, a2, 33
-	srli	a2, a2, 33
-	slli	a2, a2, 1
+	srli	a2, a2, 32
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

@@ -1,21 +1,19 @@
 func000000000000003f:                   # @func000000000000003f
-	lui	a2, 16
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
-	slli	a1, a1, 7
+	slli	a1, a1, 48
+	slli	a0, a0, 48
+	srli	a1, a1, 41
+	srli	a0, a0, 48
 	slli	a2, a0, 7
+	sub	a0, a0, a1
 	sub	a0, a2, a0
-	add	a0, a0, a1
 	ret
 func000000000000003e:                   # @func000000000000003e
-	lui	a2, 16
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
+	slli	a1, a1, 48
+	slli	a0, a0, 48
+	srli	a1, a1, 48
 	slli	a2, a1, 13
 	slli	a1, a1, 15
 	subw	a1, a1, a2
-	slli	a0, a0, 14
+	srli	a0, a0, 34
 	addw	a0, a0, a1
 	ret

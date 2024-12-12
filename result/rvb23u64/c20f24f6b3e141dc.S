@@ -4,8 +4,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000003:                   # @func0000000000000003
 	subw	a0, a0, a1
-	zext.h	a0, a0
-	slli	a0, a0, 32
+	slli	a0, a0, 48
+	srli	a0, a0, 16
 	ret
 func0000000000000008:                   # @func0000000000000008
 	subw	a0, a0, a1
@@ -13,21 +13,21 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000013:                   # @func0000000000000013
 	subw	a0, a0, a1
-	zext.h	a0, a0
-	slli	a0, a0, 2
+	slli	a0, a0, 48
+	srli	a0, a0, 46
 	ret
 func000000000000000b:                   # @func000000000000000b
 	subw	a0, a0, a1
-	zext.h	a0, a0
-	slli	a0, a0, 32
+	slli	a0, a0, 48
+	srli	a0, a0, 16
 	ret
 func0000000000000017:                   # @func0000000000000017
 	subw	a0, a0, a1
-	zext.h	a0, a0
-	slli	a0, a0, 5
+	slli	a0, a0, 48
+	srli	a0, a0, 43
 	ret
 func000000000000001f:                   # @func000000000000001f
 	subw	a0, a0, a1
-	zext.h	a0, a0
-	slli	a0, a0, 5
+	slli	a0, a0, 48
+	srli	a0, a0, 43
 	ret

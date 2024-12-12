@@ -20,22 +20,20 @@ func000000000000000a:                   # @func000000000000000a
 	or	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	lui	a3, 16
-	addiw	a3, a3, -1
-	and	a2, a2, a3
-	and	a1, a1, a3
-	slli	a2, a2, 8
+	slli	a2, a2, 48
+	slli	a1, a1, 48
+	srli	a2, a2, 40
+	srli	a1, a1, 48
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 func000000000000003d:                   # @func000000000000003d
-	lui	a3, 16
-	addiw	a3, a3, -1
-	and	a2, a2, a3
-	and	a1, a1, a3
-	slli	a2, a2, 8
+	slli	a2, a2, 48
+	slli	a1, a1, 48
+	srli	a2, a2, 40
+	srli	a1, a1, 48
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 func000000000000003a:                   # @func000000000000003a
 	slliw	a2, a2, 24
@@ -45,13 +43,12 @@ func000000000000003a:                   # @func000000000000003a
 	or	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f
-	lui	a3, 16
-	addiw	a3, a3, -1
-	and	a2, a2, a3
-	and	a1, a1, a3
-	slli	a2, a2, 12
+	slli	a2, a2, 48
+	slli	a1, a1, 48
+	srli	a2, a2, 36
+	srli	a1, a1, 48
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slliw	a2, a2, 19
