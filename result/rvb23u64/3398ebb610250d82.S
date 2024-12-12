@@ -12,9 +12,9 @@ func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
-	slli	a1, a1, 5
-	add	a0, a0, a1
-	addi	a0, a0, -32
+	slli	a1, a1, 3
+	addi	a1, a1, -8
+	sh2add	a0, a1, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addiw	a1, a1, 1

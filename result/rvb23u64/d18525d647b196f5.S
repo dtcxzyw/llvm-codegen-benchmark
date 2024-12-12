@@ -40,8 +40,8 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a0, a0, a1
 	ret
 func00000000000001e1:                   # @func00000000000001e1
+	addi	a2, a2, -1
 	sh1add	a1, a2, a1
-	addi	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

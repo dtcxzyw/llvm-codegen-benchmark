@@ -10,10 +10,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000001c:                   # @func000000000000001c
 	zext.h	a1, a1
+	li	a2, 1453
+	sh2add	a1, a2, a1
 	sh2add	a0, a1, a0
-	lui	a1, 6
-	addiw	a1, a1, -1328
-	add	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 255

@@ -7,8 +7,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000007:                   # @func0000000000000007
 	bseti	a2, zero, 11
 	minu	a1, a1, a2
+	addi	a1, a1, -1
 	sh3add	a0, a1, a0
-	addi	a0, a0, -8
 	ret
 func000000000000000f:                   # @func000000000000000f
 	li	a2, 32

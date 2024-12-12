@@ -1,7 +1,7 @@
 func000000000000001f:                   # @func000000000000001f
+	addi	a2, a2, 1
 	sh3add	a1, a1, a2
 	sh2add	a0, a1, a0
-	addi	a0, a0, 4
 	ret
 func000000000000001e:                   # @func000000000000001e
 	add	a0, a0, a1
@@ -9,10 +9,10 @@ func000000000000001e:                   # @func000000000000001e
 	addi	a0, a0, 1
 	ret
 func000000000000001b:                   # @func000000000000001b
+	addi	a2, a2, 1
 	sh2add	a1, a1, a1
 	sh2add	a1, a1, a2
 	sh3add	a0, a1, a0
-	addi	a0, a0, 8
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sh2add	a0, a1, a0

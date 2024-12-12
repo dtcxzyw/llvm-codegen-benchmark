@@ -12,6 +12,7 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	subw	a2, a2, a1
+	addi	a2, a2, 1
 	sh2add	a0, a2, a0
-	addiw	a0, a0, 4
+	sext.w	a0, a0
 	ret

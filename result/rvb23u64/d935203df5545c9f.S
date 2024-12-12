@@ -1,8 +1,8 @@
 func0000000000000010:                   # @func0000000000000010
 	snez	a2, a2
+	addi	a2, a2, -1
 	sh2add	a0, a1, a0
 	sh2add	a0, a2, a0
-	addi	a0, a0, -4
 	ret
 func0000000000000142:                   # @func0000000000000142
 	lui	a3, 1819

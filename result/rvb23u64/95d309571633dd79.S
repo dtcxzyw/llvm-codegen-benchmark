@@ -21,8 +21,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000005e:                   # @func000000000000005e
 	sub	a1, a1, a2
+	addi	a1, a1, 3
 	sh2add	a0, a1, a0
-	addi	a0, a0, 312
+	addi	a0, a0, 300
 	ret
 func000000000000001c:                   # @func000000000000001c
 	not	a2, a2
@@ -32,6 +33,7 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sub	a1, a1, a2
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 16
+	addi	a0, a0, 8
 	ret

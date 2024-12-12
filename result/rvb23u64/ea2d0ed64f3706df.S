@@ -13,6 +13,6 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000006:                   # @func0000000000000006
 	li	a2, 8
 	maxu	a1, a1, a2
+	addi	a1, a1, -8
 	sh3add	a0, a1, a0
-	addi	a0, a0, -64
 	ret

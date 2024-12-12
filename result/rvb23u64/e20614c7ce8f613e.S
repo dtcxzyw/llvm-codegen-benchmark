@@ -15,8 +15,8 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
+	addi	a1, a1, -2
 	sh1add	a0, a1, a0
-	addi	a0, a0, -4
 	ret
 func000000000000001b:                   # @func000000000000001b
 	addi	a1, a1, 63
