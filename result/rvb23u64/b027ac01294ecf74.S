@@ -4,28 +4,27 @@ func000000000000017a:                   # @func000000000000017a
 	addi	a0, a0, 1
 	ret
 func000000000000009a:                   # @func000000000000009a
-	slli	a2, a2, 4
-	slli	a1, a1, 4
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 4
+	slli	a2, a2, 2
+	addi	a2, a2, 1
+	sh2add	a1, a1, a2
+	sh2add	a0, a1, a0
 	ret
 func00000000000000ba:                   # @func00000000000000ba
-	slli	a2, a2, 4
-	slli	a1, a1, 4
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 4
+	slli	a2, a2, 2
+	addi	a2, a2, 1
+	sh2add	a1, a1, a2
+	sh2add	a0, a1, a0
 	ret
 func00000000000001f0:                   # @func00000000000001f0
-	slli	a2, a2, 6
+	slli	a2, a2, 4
 	slli	a1, a1, 7
+	addi	a2, a2, 16
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 64
+	sh2add	a0, a2, a0
 	ret
 func00000000000001ba:                   # @func00000000000001ba
+	slli	a2, a2, 1
+	addi	a2, a2, 1
 	sh2add	a0, a1, a0
-	sh2add	a0, a2, a0
-	addi	a0, a0, 2
+	sh1add	a0, a2, a0
 	ret

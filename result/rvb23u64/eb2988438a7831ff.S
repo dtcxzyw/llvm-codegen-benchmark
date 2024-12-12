@@ -12,11 +12,13 @@ func000000000000005e:                   # @func000000000000005e
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh1add	a0, a2, a0
-	addi	a0, a0, 198
+	addi	a0, a0, 196
 	ret
 func00000000000000da:                   # @func00000000000000da
 	sub	a2, a2, a1
+	addi	a2, a2, 4
 	sh2add	a0, a2, a0
-	addi	a0, a0, 288
+	addi	a0, a0, 272
 	ret

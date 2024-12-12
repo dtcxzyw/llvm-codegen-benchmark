@@ -5,12 +5,14 @@ func000000000000000e:                   # @func000000000000000e
 	addi	a0, a0, -32
 	ret
 func000000000000002e:                   # @func000000000000002e
-	ori	a1, a1, 8
-	add	a0, a0, a1
+	srli	a1, a1, 3
+	ori	a1, a1, 1
+	sh3add	a0, a1, a0
 	addi	a0, a0, -16
 	ret
 func000000000000002c:                   # @func000000000000002c
-	ori	a1, a1, 8
-	add	a0, a0, a1
+	srli	a1, a1, 3
+	ori	a1, a1, 1
+	sh3add	a0, a1, a0
 	addi	a0, a0, -16
 	ret

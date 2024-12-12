@@ -16,8 +16,9 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
+	addi	a1, a1, 1
 	sh1add	a0, a1, a0
 	lui	a1, 97
-	addiw	a1, a1, 1986
+	addiw	a1, a1, 1984
 	add	a0, a0, a1
 	ret

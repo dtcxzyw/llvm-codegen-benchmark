@@ -16,6 +16,7 @@ func000000000000005e:                   # @func000000000000005e
 	ret
 func0000000000000058:                   # @func0000000000000058
 	zext.h	a1, a1
+	addi	a1, a1, -1
 	sh2add	a0, a1, a0
-	addi	a0, a0, 20
+	addi	a0, a0, 24
 	ret

@@ -20,8 +20,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func00000000000000be:                   # @func00000000000000be
 	slliw	a1, a1, 1
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 8
 	ret
 func000000000000009e:                   # @func000000000000009e
 	slliw	a1, a1, 2
@@ -35,8 +35,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func000000000000003c:                   # @func000000000000003c
 	slliw	a1, a1, 1
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 8
 	ret
 func000000000000009a:                   # @func000000000000009a
 	slli	a1, a1, 1
@@ -46,6 +46,6 @@ func000000000000009a:                   # @func000000000000009a
 	ret
 func000000000000007e:                   # @func000000000000007e
 	slliw	a1, a1, 1
+	addi	a1, a1, 1
 	sh2add	a0, a1, a0
-	addi	a0, a0, 4
 	ret

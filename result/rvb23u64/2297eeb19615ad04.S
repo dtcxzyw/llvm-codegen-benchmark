@@ -1,14 +1,13 @@
 func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 255
+	addi	a1, a1, 256
 	sh2add	a0, a1, a0
-	addi	a0, a0, 1024
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 127
+	li	a2, 1312
+	sh2add	a1, a2, a1
 	sh2add	a0, a1, a0
-	lui	a1, 5
-	addiw	a1, a1, 512
-	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	ori	a1, a1, 48

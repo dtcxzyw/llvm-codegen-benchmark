@@ -33,16 +33,16 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func000000000000003e:                   # @func000000000000003e
 	sub	a2, a2, a1
+	addi	a2, a2, 7
 	sh2add	a0, a2, a0
-	addi	a0, a0, 28
 	ret
 func0000000000000032:                   # @func0000000000000032
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh1add	a0, a2, a0
-	addi	a0, a0, 2
 	ret
 func0000000000000036:                   # @func0000000000000036
 	sub	a2, a2, a1
+	addi	a2, a2, 4
 	sh2add	a0, a2, a0
-	addi	a0, a0, 16
 	ret

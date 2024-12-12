@@ -1,6 +1,7 @@
 func000000000000003a:                   # @func000000000000003a
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 12
+	addi	a0, a0, 4
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a2, a1, 3
@@ -50,8 +51,9 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -128
 	ret
 func0000000000000028:                   # @func0000000000000028
+	addi	a1, a1, 2
 	sh3add	a0, a1, a0
-	addi	a0, a0, 20
+	addi	a0, a0, 4
 	ret
 func000000000000003b:                   # @func000000000000003b
 	slli	a1, a1, 4
@@ -59,10 +61,12 @@ func000000000000003b:                   # @func000000000000003b
 	addi	a0, a0, 20
 	ret
 func000000000000001b:                   # @func000000000000001b
+	addi	a1, a1, -1
 	sh3add	a0, a1, a0
-	addi	a0, a0, -4
+	addi	a0, a0, 4
 	ret
 func0000000000000010:                   # @func0000000000000010
+	addi	a1, a1, -1
 	sh3add	a0, a1, a0
-	addi	a0, a0, -4
+	addi	a0, a0, 4
 	ret

@@ -11,9 +11,10 @@ func0000000000000032:                   # @func0000000000000032
 	ret
 func0000000000000078:                   # @func0000000000000078
 	andi	a1, a1, 31
+	addi	a1, a1, 2
 	sh2add	a0, a1, a0
 	addi	a0, a0, 2047
-	addi	a0, a0, 1829
+	addi	a0, a0, 1821
 	ret
 func0000000000000038:                   # @func0000000000000038
 	andi	a1, a1, 255

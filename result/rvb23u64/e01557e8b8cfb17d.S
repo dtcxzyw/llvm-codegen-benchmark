@@ -1,8 +1,9 @@
 func0000000000000038:                   # @func0000000000000038
 	andi	a1, a1, 7
+	addi	a1, a1, 440
 	sh2add	a0, a1, a0
-	lui	a1, 3
-	addiw	a1, a1, -1044
+	lui	a1, 2
+	addiw	a1, a1, 1292
 	add	a0, a0, a1
 	ret
 func000000000000003a:                   # @func000000000000003a

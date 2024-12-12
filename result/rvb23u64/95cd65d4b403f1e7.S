@@ -23,7 +23,8 @@ func00000000000001f0:                   # @func00000000000001f0
 	sh2add	a0, a1, a0
 	ret
 func00000000000000c0:                   # @func00000000000000c0
-	sh1add	a1, a2, a1
+	slli	a2, a2, 2
+	addi	a2, a2, 1
+	sh2add	a0, a2, a0
 	sh3add	a0, a1, a0
-	addi	a0, a0, 4
 	ret

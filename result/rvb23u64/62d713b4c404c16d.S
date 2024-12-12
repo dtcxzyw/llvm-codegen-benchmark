@@ -19,8 +19,9 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func000000000000005a:                   # @func000000000000005a
 	sub	a1, a1, a2
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 24
+	addi	a0, a0, 16
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a1, a1, a2

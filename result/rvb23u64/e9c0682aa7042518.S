@@ -4,6 +4,7 @@ func000000000000006a:                   # @func000000000000006a
 	addi	a0, a0, 80
 	ret
 func0000000000000062:                   # @func0000000000000062
+	addi	a1, a1, 1
 	sh2add	a0, a1, a0
-	addi	a0, a0, 1184
+	addi	a0, a0, 1180
 	ret

@@ -16,21 +16,24 @@ func00000000000000fa:                   # @func00000000000000fa
 func0000000000000012:                   # @func0000000000000012
 	add	a1, a1, a2
 	lui	a2, 12
+	addi	a1, a1, -224
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 128
+	addiw	a1, a2, 1024
 	add	a0, a0, a1
 	ret
 func0000000000000032:                   # @func0000000000000032
 	add	a1, a1, a2
 	lui	a2, 12
+	addi	a1, a1, 224
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 1920
+	addiw	a1, a2, 1024
 	add	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
 	lui	a2, 74
+	addi	a1, a1, -1
 	sh3add	a0, a1, a0
-	addiw	a1, a2, -96
+	addiw	a1, a2, -88
 	add	a0, a0, a1
 	ret

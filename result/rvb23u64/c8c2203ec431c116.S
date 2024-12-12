@@ -9,6 +9,8 @@ func000000000000001a:                   # @func000000000000001a
 	addi	a0, a0, 24
 	ret
 func0000000000000072:                   # @func0000000000000072
-	sh3add	a0, a1, a0
-	addi	a0, a0, 6
+	slli	a1, a1, 1
+	addi	a1, a1, 1
+	sh2add	a0, a1, a0
+	addi	a0, a0, 2
 	ret

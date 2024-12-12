@@ -1,8 +1,9 @@
 func000000000000003f:                   # @func000000000000003f
-	slli	a0, a0, 2
+	addi	a0, a0, -1
 	li	a1, 1
-	addi	a0, a0, 11
+	slli	a0, a0, 2
 	slli	a1, a1, 34
+	addi	a0, a0, 15
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
@@ -13,6 +14,8 @@ func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, -8
 	ret
 func000000000000002f:                   # @func000000000000002f
-	slli	a0, a0, 33
-	srli	a0, a0, 32
+	addi	a0, a0, -1
+	slli	a0, a0, 1
+	addi	a0, a0, 2
+	zext.w	a0, a0
 	ret
